@@ -70,13 +70,13 @@ const Blogs = () => {
     //     ))}
     //   </div>
     // </section>
-     <section id="blogs" className="py-20 bg-gradient-to-r from-green-600 to-green-400">
-      <h2 className="text-center text-4xl font-bold mb-8 text-white">Blogs</h2>
+     <section id="blogs" >
+      <h2 className="text-center text-4xl font-bold mb-20 mt-20 text-black">Blogs</h2>
       <div className="container mx-auto px-8">
         {blogList.map((blog, index) => (
           <div
             key={index}
-            className="flex items-center bg-white rounded-full shadow-lg p-4 mb-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
+            className="flex items-center bg-white rounded-full shadow-lg p-4 mb-8 gap-8 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
             <img
               src={blog.image}

@@ -96,13 +96,13 @@ const Projects = () => {
     //     ))}
     //   </div>
     // </section>
-     <section id="projects" ref={projectsRef} className="py-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-      <h2 className="text-center text-4xl font-bold mb-8 text-white">Projects</h2>
-      <div className="flex flex-wrap justify-center gap-8 container mx-auto px-8">
+     <section id="projects" ref={projectsRef} >
+      <h2 className="text-center text-4xl font-bold mb-20 mt-20 text-black">Projects</h2>
+      <div className="flex flex-wrap justify-center gap-10 container mx-auto px-12">
         {projectList.map((project, index) => (
           <div
             key={index}
-            className={`bg-white rounded-lg shadow-lg p-4 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col items-center" ${
+            className={`bg-white rounded-lg shadow-lg p-12 transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col items-center" ${
               isVisible ? 'opacity-100 translate-y-0 animate-fade-in' : 'opacity-0 translate-y-10'
             }`}
             style={{ width: '250px', transitionDelay: `${index * 100}ms` }} // Stagger the animation delay
@@ -111,7 +111,7 @@ const Projects = () => {
               src={project.image}
               alt={project.title}
               className="rounded-auto mb-4" // Rounded image
-              style={{ width: '100%', height: '150px', objectFit: 'cover' }} // Ensure the image fits well
+              style={{ width: '150%', height: '150px', objectFit: 'cover' }} // Ensure the image fits well
             />
             <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
             <p className="text-gray-700 mb-2">{project.description}</p>

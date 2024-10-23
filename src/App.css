@@ -39,3 +39,12 @@ html {
     transform: rotate(360deg);
   }
 }
+/* Add this in App.css or a global CSS file */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+  /* Gradient grey */
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}

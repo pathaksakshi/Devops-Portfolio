@@ -35,12 +35,16 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section id="about" className="flex flex-col items-center justify-center py-20 bg-gradient-to-r from-blue-600 to-blue-400">
+    <section id="about" className="flex flex-col items-center v-screen justify-center py-20 from-blue-600 to-blue-400 mt-20 mb-20">
       <h2 className="text-center text-4xl sm:text-5xl font-bold mb-4 text-black about-text">
         Hello, I'm Sakshi Rishipathak
       </h2>
       <p className="text-center text-lg sm:text-xl text-white mb-6 about-text">
         DevOps Engineer | SDET
+      </p>
+      <p className="text-center text-lg sm:text-xl text-black mb-10 about-text">
+        I'm an experienced Software Development Engineer in Test (SDET) deeply passionate about DevOps practices. My focus lies in ensuring software quality through rigorous testing and automation. I leverage my background in software engineering to integrate DevOps principles, aiming to optimize efficiency and enhance collaboration across teams. I'm dedicated to continuous improvement and excited to contribute to advancing DevOps methodologies.
+
       </p>
       <div className="flex justify-center">
         <a 
