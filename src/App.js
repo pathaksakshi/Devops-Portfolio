@@ -25,6 +25,7 @@
 // export default App;
 
 import React from 'react';
+import NavigationBar from './components/NavigationBar';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Blogs from './components/Blogs';
@@ -35,6 +36,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
+      <NavigationBar />
       <AboutMe />
       <Projects />
       <Blogs />
