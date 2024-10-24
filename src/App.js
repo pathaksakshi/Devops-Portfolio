@@ -56,6 +56,7 @@ import Blogs from './components/Blogs';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faHashnode } from '@fortawesome/free-brands-svg-icons'; // Import the icons you need
 
@@ -107,6 +108,7 @@ const App = () => {
         <Contact />
       </section>
       
+       <Footer />  {/* Footer added here */}
     </div>
     
   );
